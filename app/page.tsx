@@ -1,13 +1,9 @@
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header/Header";
 import HomeContent from "@/components/layout/HomeContent";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
+    <div className="max-w-275 mx-auto px-6 py-8">
       <HomeContent />
-      <Footer />
     </div>
   );
 }
