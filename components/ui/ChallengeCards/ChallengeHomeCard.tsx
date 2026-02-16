@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function ChallengeHomeCard() {
   return (
     <div className="w-56">
-      <div className="card bg-base-100 w-56 shadow-sm relative rounded-md overflow-hidden">
-        <figure>
+      <div className="card w-56 shadow-sm relative rounded-md overflow-hidden">
+        <figure className="relative w-full aspect-16/10">
           <Image
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
             alt="Shoes"
-            width={384}
-            height={256}
+            fill
+            className="object-cover"
           />
         </figure>
         <h2 className="card-title absolute top-0 left-0 text-white text-base bg-black/50 px-2 py-[1.3] rounded-t-md w-full">

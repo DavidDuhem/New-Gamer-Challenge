@@ -1,2 +1,34 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: dark --default;
+}
+@plugin "daisyui/theme" {
+  name: "dark"; /* on customise le thème dark existant */
+  default: true; /* le thème par défaut */
+
+  /* couleurs principales */
+  --color-primary: #6b6bff; /* boutons principaux */
+  --color-primary-content: #f9f9ff; /* texte sur bouton primaire */
+
+  --color-secondary: #ffb86c;
+  --color-secondary-content: #1f1f1f;
+
+  --color-accent: #50fa7b;
+  --color-accent-content: #1f1f1f;
+
+  /* fonds */
+  --color-base-100: #1f1f1f; /* fond global */
+  --color-base-200: #333333; /* sections */
+  --color-base-300: #444444; /* cartes / panels */
+  --color-base-content: #f9f9ff; /* texte général */
+
+  /* notifications / messages */
+  --color-info: #8be9fd;
+  --color-info-content: #1f1f1f;
+  --color-success: #50fa7b;
+  --color-success-content: #1f1f1f;
+  --color-warning: #f1fa8c;
+  --color-warning-content: #1f1f1f;
+  --color-error: #ff5555;
+  --color-error-content: #1f1f1f;
+}
