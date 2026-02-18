@@ -22,7 +22,7 @@ export default function CarouselHomeItem({
         className="object-cover rounded-md"
       />
 
-      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+      <div className="absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 justify-between hidden">
         <a href={prev} className="btn btn-circle">
           ❮
         </a>

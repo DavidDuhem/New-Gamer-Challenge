@@ -2,7 +2,7 @@ import CarouselHomeItem from "./CarouselHomeItem";
 
 export default function CarouselHome() {
   return (
-    <div className="carousel w-2/3">
+    <>
       <CarouselHomeItem
         id="slide1"
         prev="#slide4"
@@ -27,6 +27,6 @@ export default function CarouselHome() {
         next="#slide1"
         src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
       />
-    </div>
+    </>
   );
 }

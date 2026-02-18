@@ -1,9 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui" {
+  /* biome-ignore lint/correctness/noUnknownProperty: Daisy UI unexpected warning */
   themes: dark --default;
 }
 @plugin "daisyui/theme" {
+  /* biome-ignore lint/correctness/noUnknownProperty: Daisy UI unexpected warning */
   name: "dark"; /* on customise le thème dark existant */
+  /* biome-ignore lint/correctness/noUnknownProperty: Daisy UI unexpected warning */
   default: true; /* le thème par défaut */
 
   /* couleurs principales */

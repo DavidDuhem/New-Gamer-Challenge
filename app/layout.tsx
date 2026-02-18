@@ -11,7 +11,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className="bg-base-100 min-h-screen antialiased">
         <Header />
-        {children}
+        <div className="max-w-275 mx-auto px-6 py-5">{children}</div>
         <Footer />
       </body>
     </html>

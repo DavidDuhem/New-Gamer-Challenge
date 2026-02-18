@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50">
-      <div className="navbar bg-base-100 shadow-sm px-4">
+      <div className="navbar bg-base-100 shadow-sm px-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="dropdown">
             <button
@@ -29,14 +29,14 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <a className="btn btn-ghost text-xl normal-case" href="/">
+          <a className="btn btn-ghost text-lg md:text-xl normal-case" href="/">
             New Gamer Challenges
           </a>
-        </div>{" "}
-        <div className="flex-1 flex justify-center">
+        </div>
+        <div className="hidden md:flex justify-center flex-1">
           <SearchBar />
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="">
           <ProfileMenu />
         </div>
       </div>

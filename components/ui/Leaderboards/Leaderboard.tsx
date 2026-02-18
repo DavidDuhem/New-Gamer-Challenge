@@ -1,20 +1,23 @@
+import SectionTitle from "../Home/SectionTitle";
 import LeaderboardRow from "./LeaderboardRow";
+import LeaderboardRowMobile from "./LeaderboardRowMobile";
 
 export default function Leaderboard() {
   return (
     <div className="flex flex-col gap-5 bg-base-200 rounded-md p-5 ">
-      <div className="flex items-center gap-1">
-        <h2 className="text-2xl font-bold text-base-content leading-none">
-          Best Challengers
-        </h2>
-        <a
-          href="/popular-challenges"
-          className="text-primary text-lg font-bold relative top-0.5"
-        >
-          - View all
-        </a>
+      <SectionTitle
+        title="Best Challengers"
+        href="/popular-challenges"
+        linkName="View all"
+      />
+      <div className="flex flex-col gap-3 md:hidden">
+        <LeaderboardRowMobile />
+        <LeaderboardRowMobile />
+        <LeaderboardRowMobile />
+        <LeaderboardRowMobile />
+        <LeaderboardRowMobile />
       </div>
-      <div className="flex w-full flex-col gap-3">
+      <div className="hidden md:flex w-full flex-col gap-3">
         <LeaderboardRow />
         <LeaderboardRow />
         <LeaderboardRow />
