@@ -22,14 +22,20 @@ export default function CarouselHomeItem({
         className="object-cover rounded-md"
       />
 
-      <div className="absolute left-5 right-5 top-1/2 md:flex -translate-y-1/2 justify-between hidden">
-        <a href={prev} className="btn btn-circle">
+      {/* <div className="absolute left-5 right-5 top-1/2 -translate-y-1/2 hidden md:flex justify-between">
+        <a
+          href={prev}
+          className="btn btn-circle w-8 h-8 bg-black/50 text-white hover:bg-black/70 transition border-0"
+        >
           ❮
         </a>
-        <a href={next} className="btn btn-circle">
+        <a
+          href={next}
+          className="btn btn-circle w-8 h-8 bg-black/50 text-white hover:bg-black/70 transition border-0"
+        >
           ❯
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

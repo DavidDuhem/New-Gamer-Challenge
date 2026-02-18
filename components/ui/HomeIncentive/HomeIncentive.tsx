@@ -1,7 +1,7 @@
 export default function HomeIncentive() {
   return (
     <>
-      <h2 className="font-bold text-center md:text-start">
+      <h2 className="font-bold text-xl md:text-2xl text-center md:text-start">
         Join the Challenge!
       </h2>
       <p className="text-base text-center md:text-start">

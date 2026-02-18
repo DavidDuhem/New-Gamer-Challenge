@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ChallengeHomeCard() {
+export default function ChallengeGridCard() {
   return (
     <div className="w-56 group">
       <a href="/home">

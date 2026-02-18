@@ -7,7 +7,7 @@ export default function Leaderboard() {
     <div className="flex flex-col gap-5 bg-base-200 rounded-md p-5 ">
       <SectionTitle
         title="Best Challengers"
-        href="/popular-challenges"
+        href="/leaderboard"
         linkName="View all"
       />
       <div className="flex flex-col gap-3 md:hidden">
