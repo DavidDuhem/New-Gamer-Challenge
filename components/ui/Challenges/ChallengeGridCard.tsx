@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ChallengeGridCard() {
   return (
     <div className="w-56 group">
-      <a href="/home">
+      <Link href="/challenges/1">
         <div className="card w-56 shadow-sm relative rounded-md overflow-hidden cursor-pointer">
           <figure className="relative w-full aspect-16/10">
             <Image
@@ -26,21 +27,21 @@ export default function ChallengeGridCard() {
             </p>
           </div>
         </div>
-      </a>
+      </Link>
       <div className="card-body px-1 py-2">
-        <a href="/home">
+        <Link href="/challenges/1">
           <h2 className="card-title">Challenge Name</h2>
-        </a>
+        </Link>
         <div className="card-actions justify-start">
-          <a href="/tag">
+          <Link href="/challenges">
             <div className="badge badge-primary">PS5</div>
-          </a>
-          <a href="/tag">
+          </Link>
+          <Link href="/challenges">
             <div className="badge badge-secondary">PC</div>
-          </a>
-          <a href="/tag">
+          </Link>
+          <Link href="/challenges">
             <div className="badge badge-secondary">Hard</div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

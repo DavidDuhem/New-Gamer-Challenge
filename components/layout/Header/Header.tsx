@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProfileMenu from "./ProfileMenu";
 import SearchBar from "./SearchBar";
 
@@ -29,9 +30,12 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <a className="btn btn-ghost text-lg md:text-xl normal-case" href="/">
+          <Link
+            className="btn btn-ghost text-lg md:text-xl normal-case"
+            href="/"
+          >
             New Gamer Challenges
-          </a>
+          </Link>
         </div>
         <div className="hidden md:flex justify-center flex-1">
           <SearchBar />
